@@ -11,18 +11,17 @@ import com.example.a10.androidpoject.Math_MainActivity;
 
 /// 코드 작성자 김준엽
 public class Math_result_MainActivity extends AppCompatActivity {
-    TextView resulttext;
-    public int mathscore;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_math_result);
 
-        resulttext=(TextView)findViewById(R.id.textView8);
-        mathscore=((Math_MainActivity)Math_MainActivity.context).score;
+        TextView resulttext=(TextView)findViewById(R.id.textView8);
+        Intent intent=getIntent();
+        int score1=intent.getExtras().getInt("score1");
+        resulttext.setText(String.valueOf(score1)+"점입니다");
 
-
-        resulttext.setText("점수 : "+ mathscore);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);//화면의 제목 없애주는 문장
         getSupportActionBar().hide();//화면의 제목 숨겨주는 문장

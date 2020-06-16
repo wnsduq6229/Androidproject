@@ -27,7 +27,7 @@ public class Math_MainActivity extends AppCompatActivity {
     int cnt=0;
     int cntProblem=0;//문제 난이도 설정을 위한 카운트 변수
     int choose1= rnd.nextInt(4)+1;// 4가지 케이스의 결과값중 하나를 선택하기 위한 변수
-    public int score=0;
+    public int score1=0;
     public static Context context;//다른 액티비티에 변수 전달하기 위한 변수.
 
     @Override
@@ -44,7 +44,7 @@ public class Math_MainActivity extends AppCompatActivity {
 /////////////////////////////////////////////////////////////////////
         context=this;
         problemText(p1, p2,p3, choose1);//문제 출력함수
-        scoreboard.setText(" "+score);
+        scoreboard.setText(" "+score1);
 /*
         if(cntProblem==10)
         {
@@ -82,6 +82,7 @@ public class Math_MainActivity extends AppCompatActivity {
                 {
                     Intent intent = new Intent(
                             getApplicationContext(),Math_result_MainActivity.class);//현재 화면의 제어권자,결과창으로 이동
+                    intent.putExtra("score1",score1);
                     startActivity(intent);//다음화면으로 넘어간다.
                 }
             }
@@ -107,6 +108,7 @@ public class Math_MainActivity extends AppCompatActivity {
                 {
                     Intent intent = new Intent(
                             getApplicationContext(),Math_result_MainActivity.class);//현재 화면의 제어권자,결과창으로 이동
+                    intent.putExtra("score1",score1);
                     startActivity(intent);//다음화면으로 넘어간다.
                 }
             }
@@ -131,6 +133,7 @@ public class Math_MainActivity extends AppCompatActivity {
                 {
                     Intent intent = new Intent(
                             getApplicationContext(),Math_result_MainActivity.class);//현재 화면의 제어권자,결과창으로 이동
+                    intent.putExtra("score1",score1);
                     startActivity(intent);//다음화면으로 넘어간다.
                 }
             }
@@ -156,6 +159,7 @@ public class Math_MainActivity extends AppCompatActivity {
                 {
                     Intent intent = new Intent(
                             getApplicationContext(),Math_result_MainActivity.class);//현재 화면의 제어권자,결과창으로 이동
+                    intent.putExtra("score1",score1);
                     startActivity(intent);//다음화면으로 넘어간다.
                 }
             }
@@ -254,9 +258,9 @@ public class Math_MainActivity extends AppCompatActivity {
                 if(cntProblem<5) {
                     if ((x + y) == r) {
                         problem.setText(" 정답!!");
-                        score++;//점수증가
+                        score1++;//점수증가
                         cntProblem++;//다음 난이도/문제종료로 넘어가는걸 체크하기 위한 카운트변수
-                        scoreboard.setText(" " + score);
+                        scoreboard.setText(" " + score1);
                         rabbitImg(0);//기쁜 토끼 이미지
                     } else {
                         problem.setText(" 오답!");
@@ -267,9 +271,9 @@ public class Math_MainActivity extends AppCompatActivity {
                 else{
                     if((x+y+z)==r){
                         problem.setText(" 정답!!");
-                        score++;//점수증가
+                        score1++;//점수증가
                         cntProblem++;//다음 난이도로 넘어가는걸 체크하기 위한 카운트변수
-                        scoreboard.setText(" " + score);
+                        scoreboard.setText(" " + score1);
                         rabbitImg(0);//기쁜 토끼 이미지
                     }
                     else{
@@ -283,9 +287,9 @@ public class Math_MainActivity extends AppCompatActivity {
                 if(cntProblem<5) {
                     if ((x - y) == r) {
                         problem.setText(" 정답!");
-                        score++;//점수증가
+                        score1++;//점수증가
                         cntProblem++;//다음 난이도로 넘어가는걸 체크하기 위한 카운트변수
-                        scoreboard.setText(" " + score);
+                        scoreboard.setText(" " + score1);
                         rabbitImg(0);//기쁜 토끼 이미지
                     } else {
                         problem.setText(" 오답!");
@@ -298,9 +302,9 @@ public class Math_MainActivity extends AppCompatActivity {
                     if((x+y-z)==r)
                     {
                         problem.setText(" 정답!");
-                        score++;//점수증가
+                        score1++;//점수증가
                         cntProblem++;//다음 난이도로 넘어가는걸 체크하기 위한 카운트변수
-                        scoreboard.setText(" " + score);
+                        scoreboard.setText(" " + score1);
                         rabbitImg(0);//기쁜 토끼 이미지
                     }
                     else
@@ -315,9 +319,9 @@ public class Math_MainActivity extends AppCompatActivity {
                 if(cntProblem<5) {
                     if ((x * y) == r) {
                         problem.setText("정답!");
-                        score++;//점수증가
+                        score1++;//점수증가
                         cntProblem++;//다음 난이도로 넘어가는걸 체크하기 위한 카운트변수
-                        scoreboard.setText(" " + score);
+                        scoreboard.setText(" " + score1);
                         rabbitImg(0);//기쁜 토끼 이미지
                     } else {
                         problem.setText(" 오답!");
@@ -329,9 +333,9 @@ public class Math_MainActivity extends AppCompatActivity {
                     if((x+y*z)==r)
                     {
                         problem.setText("정답!");
-                        score++;//점수증가
+                        score1++;//점수증가
                         cntProblem++;//다음 난이도로 넘어가는걸 체크하기 위한 카운트변수
-                        scoreboard.setText(" " + score);
+                        scoreboard.setText(" " + score1);
                         rabbitImg(0);//기쁜 토끼 이미지
                     }
                     else
@@ -346,9 +350,9 @@ public class Math_MainActivity extends AppCompatActivity {
                 if(cntProblem<5) {
                     if ((x / y) == r) {
                         problem.setText(" 정답!");
-                        score++;//점수증가
+                        score1++;//점수증가
                         cntProblem++;//다음 난이도로 넘어가는걸 체크하기 위한 카운트변수
-                        scoreboard.setText(" " + score);
+                        scoreboard.setText(" " + score1);
                         rabbitImg(0);//기쁜 토끼 이미지
                     } else {
                         problem.setText(" 오답!");
@@ -361,9 +365,9 @@ public class Math_MainActivity extends AppCompatActivity {
                     if((x+y/z)==r)
                     {
                         problem.setText(" 정답!");
-                        score++;//점수증가
+                        score1++;//점수증가
                         cntProblem++;//다음 난이도로 넘어가는걸 체크하기 위한 카운트변수
-                        scoreboard.setText(" " + score);
+                        scoreboard.setText(" " + score1);
                         rabbitImg(0);//기쁜 토끼 이미지
                     }
                     else{
