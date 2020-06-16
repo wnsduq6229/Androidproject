@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 코드 작성자 : 김성수-->
+<RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include android:layout_height="match_parent" android:layout_width="match_parent" layout="@layout/activity_onetofifty_include_view_game" android:id="@+id/include_game_view"/>
+
+    <include android:layout_height="match_parent" android:layout_width="match_parent" layout="@layout/activity_onetofifty_include_view_success" android:id="@+id/include_success_view"/>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".memory_MainActivity">
+    <!--    o 버튼-->
+    <!--    x버튼-->
+
+    <!--    패턴 이미지-->
+
+    <Button
+        android:id="@+id/button_o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_ptn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="100dp"
+        android:text="O"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_ptn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="100dp"
+        android:text="X"
+        android:visibility="gone" />
+
+    <!--    첫번째, 두번째 패턴 본 후 넘어가는 버튼-->
+    <ImageView
+        android:id="@+id/image_ptn"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        app:srcCompat="@drawable/pattern1" />
+
+    <Button
+        android:id="@+id/button_n"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_ptn"
+        android:layout_centerHorizontal="true"
+        android:background="#C1E91E63"
+        android:text="패턴을 기억하고 터치하세요"
+        android:visibility="visible" />
+
+    <!--게임종료 후 점수 표시-->
+
+</RelativeLayout>

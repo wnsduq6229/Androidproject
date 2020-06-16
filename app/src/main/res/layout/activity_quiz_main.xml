@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--코드 작성자 박지현-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quizback"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".quiz_MainActivity">
+
+    <TextView
+        android:id="@+id/countLabel"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_marginTop="20dp"
+        android:text="Q1"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/questionImage"
+        android:layout_width="246dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/image_bead" />
+
+    <Button
+        android:id="@+id/answerBtn1"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="42dp"
+        android:background="#00ff0000"
+        android:onClick="checkAnswer"
+        android:text="answer1" />
+
+    <Button
+        android:id="@+id/answerBtn2"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="22dp"
+        android:background="#00ff0000"
+        android:onClick="checkAnswer"
+        android:text="answer2" />
+
+    <Button
+        android:id="@+id/answerBtn3"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="22dp"
+        android:background="#00ff0000"
+        android:onClick="checkAnswer"
+        android:text="answer3" />
+
+    <Button
+        android:id="@+id/answerBtn4"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="22dp"
+        android:background="#00ff0000"
+        android:onClick="checkAnswer"
+        android:text="answer4" />
+
+</LinearLayout>

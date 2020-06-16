@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hello Your Brain?</string>
+    <string name="success">종료</string>
+    <string name="ok">확인</string>
+</resources>

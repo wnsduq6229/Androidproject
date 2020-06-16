@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 코드 작성자 : 김성수-->
+<LinearLayout android:background="#f3f3f3" android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    -<RelativeLayout android:background="#f15f74" android:layout_height="50dp" android:layout_width="210dp" android:layout_margin="10dp" android:layout_gravity="center_horizontal">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="점수" android:layout_centerInParent="true" android:textColor="#f3f3f3" android:textStyle="bold" android:textSize="40sp" android:id="@+id/score"/>
+
+    <!--점수판 layout-->
+
+</RelativeLayout>
+
+    -<RelativeLayout android:background="#f15f74" android:layout_height="0dp" android:layout_width="match_parent" android:layout_weight="2">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="#f3f3f3" android:textSize="80sp" android:textStyle="bold" android:text="@string/success" android:layout_centerInParent="true"/>
+
+</RelativeLayout>
+
+    <!--종료창 layout-->
+    -<RelativeLayout android:layout_height="0dp" android:layout_width="match_parent" android:layout_weight="1" android:id="@+id/ok_button">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="#848484" android:textSize="30sp" android:textStyle="bold" android:text="@string/ok" android:layout_centerInParent="true"/>
+
+</RelativeLayout>
+
+</LinearLayout>
