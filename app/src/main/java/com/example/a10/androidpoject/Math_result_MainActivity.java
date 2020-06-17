@@ -19,7 +19,7 @@ public class Math_result_MainActivity extends AppCompatActivity {
 
         TextView resulttext=(TextView)findViewById(R.id.textView8);
         Intent intent=getIntent();
-        int score1=intent.getExtras().getInt("score1");
+        int score1=(intent.getExtras().getInt("score1"))*10;
         resulttext.setText(String.valueOf(score1)+"점입니다");
 
 
