@@ -4,38 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/memorydescription"
     tools:context=".memory_Description">
 
-    <TextView
-        android:id="@+id/textView3"
+<Button
+        android:id="@+id/goMemoryMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="66dp"
-        android:layout_marginLeft="66dp"
-        android:layout_marginTop="289dp"
-        android:gravity="center_horizontal"
-        android:text="서로 다른 패턴의 이미지를 기억하는 게임입니다.\n 현재 패턴이 전, 전 패턴과\n같다면 o 버튼을, 다르다면 x버튼을 누르세요."
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="200dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginBottom="78dp"
+        android:background="#00ff0000"
+        android:text="시작하기"
+        android:textColor="#FFFFFF" />
 
-    <TextView
-        android:id="@+id/textView2"
+    <Button
+        android:id="@+id/goMemoryBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="29dp"
-        android:layout_marginLeft="29dp"
-        android:layout_marginTop="168dp"
-        android:text="닌자는 항상 두걸음 앞을 내다봐야하지"
-        android:textSize="60px"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="112dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="210dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="93dp"
+        android:layout_marginBottom="77dp"
+        android:background="#00ff0000"
+        android:text="나가기"
+        android:textColor="#FFFFFF" />
+
+
 </RelativeLayout>
