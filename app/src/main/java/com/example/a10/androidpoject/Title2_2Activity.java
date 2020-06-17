@@ -42,7 +42,7 @@ public class Title2_2Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(
-                        getApplicationContext(),memory_MainActivity.class);//바꿔야댐
+                        getApplicationContext(),memory_Description.class);//바꿔야댐
                 startActivity(intent);//다음화면으로 넘어간다.
             }
         });
