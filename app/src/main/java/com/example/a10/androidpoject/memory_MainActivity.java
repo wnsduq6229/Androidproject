@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -74,5 +75,8 @@ public class memory_MainActivity extends AppCompatActivity {
                 imageview.setImageResource(imageResources[i]);
             }
         });
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);//화면의 제목 없애주는 문장
+        getSupportActionBar().hide();//화면의 제목 숨겨주는 문장
     }
 }

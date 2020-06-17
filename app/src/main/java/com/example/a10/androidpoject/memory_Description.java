@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.view.WindowManager;
 
 public class memory_Description extends AppCompatActivity {
 
@@ -23,5 +24,8 @@ public class memory_Description extends AppCompatActivity {
             }
 
         },5000);
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);//화면의 제목 없애주는 문장
+        getSupportActionBar().hide();//화면의 제목 숨겨주는 문장
     }
 }
