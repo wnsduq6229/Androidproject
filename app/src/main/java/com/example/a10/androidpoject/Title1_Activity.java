@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Title1_Activity extends AppCompatActivity {
-    ImageButton startBtn,exitBtn;
+    ImageButton startBtn,exitBtn,idBtn;
     TextView Title;
 
     @Override
@@ -21,12 +21,13 @@ public class Title1_Activity extends AppCompatActivity {
 
          startBtn=(ImageButton)findViewById(R.id.imageButton); //start 버튼 생성
          exitBtn=(ImageButton)findViewById(R.id.imageButton2); //exit 버튼 생성
+        idBtn=(ImageButton)findViewById(R.id.imageButton3);//계정생성 버튼 생성
         //start버튼 누를시 다음 화면으로 넘어가는 액션
          startBtn.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
                  Intent intent = new Intent(
-                         getApplicationContext(),main.class);//현재 화면의 제어권자,다음 넘어갈 클래스 지정
+                         getApplicationContext(),Title2_Activity.class);//현재 화면의 제어권자,다음 넘어갈 클래스 지정
                  startActivity(intent);//다음화면으로 넘어간다.
              }
          });
@@ -39,6 +40,15 @@ public class Title1_Activity extends AppCompatActivity {
                  android.os.Process.killProcess(android.os.Process.myPid());//어플 종료 함수
              }
          });
+
+        idBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(
+                        getApplicationContext(),main.class);//현재 화면의 제어권자,다음 넘어갈 클래스 지정
+                startActivity(intent);//다음화면으로 넘어간다.
+            }
+        });
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);//화면의 제목 없애주는 문장
         getSupportActionBar().hide();//화면의 제목 숨겨주는 문장
