@@ -13,8 +13,9 @@
     <TextView
         android:id="@+id/countLabel"
         android:layout_width="match_parent"
-        android:layout_height="87dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="5dp"
         android:paddingTop="8dp"
         android:text="Q1"
         android:textSize="22sp" />
@@ -23,7 +24,7 @@
         android:id="@+id/questionImage"
         android:layout_width="245dp"
         android:layout_height="180dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/image_bead" />
 
     <Button
