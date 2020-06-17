@@ -22,4 +22,20 @@ tools:context=".Math_result_MainActivity">
         android:textColor="#FE2E2E"
         android:textSize="40dp"
         android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/goBack1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="158dp"
+        android:layout_marginLeft="158dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="93dp"
+        android:layout_marginBottom="56dp"
+        android:background="#00ff0000"
+        android:text="확인"
+        android:textColor="#FFFFFF" />
 </RelativeLayout>
