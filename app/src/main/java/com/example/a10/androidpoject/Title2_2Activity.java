@@ -50,7 +50,7 @@ public class Title2_2Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(
-                        getApplicationContext(),quiz_MainActivity.class);//현재 화면의 제어권자,다음 넘어갈 클래스 지정. 바꿔야댐
+                        getApplicationContext(),quiz_description.class);//현재 화면의 제어권자,다음 넘어갈 클래스 지정. 바꿔야댐
                 startActivity(intent);//다음화면으로 넘어간다.
             }
         });
