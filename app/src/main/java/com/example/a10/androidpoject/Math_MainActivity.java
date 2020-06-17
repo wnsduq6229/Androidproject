@@ -18,13 +18,11 @@ public class Math_MainActivity extends AppCompatActivity {
     TextView problem;//문제를 나타내는 변수
     TextView scoreboard;//정답을 나타내는 변수
     Handler mHandler = new Handler();
-    ImageView imageV;
     Random rnd = new Random(System.currentTimeMillis());
     int p1 = rnd.nextInt(15)+1;//1부터 50 까지 랜덤 변수 생성
     int p2 = rnd.nextInt(15)+1;//1부터 50 까지 랜덤 변수 생성
     int p3 = rnd.nextInt(15)+1;//1부터 50 까지 랜덤 변수 생성 문제 2단계를 위한 변수
     int result=0;//결과 값을 저장하기위한 변수
-    int cnt=0;
     int cntProblem=0;//문제 난이도 설정을 위한 카운트 변수
     int choose1= rnd.nextInt(4)+1;// 4가지 케이스의 결과값중 하나를 선택하기 위한 변수
     public int score1=0;
@@ -39,7 +37,6 @@ public class Math_MainActivity extends AppCompatActivity {
         btnMultiply=(ImageButton) findViewById(R.id.Btn3);//*버튼 생성
         btnDivion=(ImageButton) findViewById(R.id.Btn4);// /버튼 생성
         problem=(TextView)findViewById(R.id.textView);// 문제 나타내는 textview 생성
-        imageV=(ImageView)findViewById(R.id.imageView);//이미지 변수 생성
         scoreboard=(TextView)findViewById(R.id.textView2);
 /////////////////////////////////////////////////////////////////////
         context=this;
@@ -168,24 +165,6 @@ public class Math_MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();//화면의 제목 숨겨주는 문장
     }
 
-    public void rabbitImg(int i)
-    {
-        switch(i){
-            case 0://기쁜 토끼
-                imageV.setImageResource(R.drawable.happyrabbit);
-                break;
-            case 1://슬픈 토끼
-                imageV.setImageResource(R.drawable.sadrabbit);
-                break;
-            case 2://화난 토끼
-                imageV.setImageResource(R.drawable.angryrabbit);
-                break;
-            case 3://일반 토끼
-                imageV.setImageResource(R.drawable.rabbit);
-                break;
-
-        }
-    }
 
     public void problemText(int p1, int p2,int p3, int choose1){
         switch (choose1) {
@@ -261,10 +240,8 @@ public class Math_MainActivity extends AppCompatActivity {
                         score1++;//점수증가
                         cntProblem++;//다음 난이도/문제종료로 넘어가는걸 체크하기 위한 카운트변수
                         scoreboard.setText(" " + score1);
-                        rabbitImg(0);//기쁜 토끼 이미지
                     } else {
                         problem.setText(" 오답!");
-                        rabbitImg(1);//슬픈토끼 이미지
                         cntProblem++;//다음 난이도/문제종료로 넘어가는걸 체크하기 위한 카운트변수
                     }
                 }
@@ -274,11 +251,9 @@ public class Math_MainActivity extends AppCompatActivity {
                         score1++;//점수증가
                         cntProblem++;//다음 난이도로 넘어가는걸 체크하기 위한 카운트변수
                         scoreboard.setText(" " + score1);
-                        rabbitImg(0);//기쁜 토끼 이미지
                     }
                     else{
                         problem.setText(" 오답!");
-                        rabbitImg(1);//슬픈토끼 이미지
                         cntProblem++;//다음 난이도/문제종료로 넘어가는걸 체크하기 위한 카운트변수
                     }
                 }
@@ -290,10 +265,8 @@ public class Math_MainActivity extends AppCompatActivity {
                         score1++;//점수증가
                         cntProblem++;//다음 난이도로 넘어가는걸 체크하기 위한 카운트변수
                         scoreboard.setText(" " + score1);
-                        rabbitImg(0);//기쁜 토끼 이미지
                     } else {
                         problem.setText(" 오답!");
-                        rabbitImg(3);//화난 토끼 이미지
                         cntProblem++;//다음 난이도/문제종료로 넘어가는걸 체크하기 위한 카운트변수
                     }
                 }
@@ -305,12 +278,10 @@ public class Math_MainActivity extends AppCompatActivity {
                         score1++;//점수증가
                         cntProblem++;//다음 난이도로 넘어가는걸 체크하기 위한 카운트변수
                         scoreboard.setText(" " + score1);
-                        rabbitImg(0);//기쁜 토끼 이미지
                     }
                     else
                     {
                         problem.setText(" 오답!");
-                        rabbitImg(3);//화난 토끼 이미지
                         cntProblem++;//다음 난이도/문제종료로 넘어가는걸 체크하기 위한 카운트변수
                     }
                 }
@@ -322,10 +293,8 @@ public class Math_MainActivity extends AppCompatActivity {
                         score1++;//점수증가
                         cntProblem++;//다음 난이도로 넘어가는걸 체크하기 위한 카운트변수
                         scoreboard.setText(" " + score1);
-                        rabbitImg(0);//기쁜 토끼 이미지
                     } else {
                         problem.setText(" 오답!");
-                        rabbitImg(3);//화난 토끼 이미지
                         cntProblem++;//다음 난이도/문제종료로 넘어가는걸 체크하기 위한 카운트변수
                     }
                 }
@@ -336,12 +305,10 @@ public class Math_MainActivity extends AppCompatActivity {
                         score1++;//점수증가
                         cntProblem++;//다음 난이도로 넘어가는걸 체크하기 위한 카운트변수
                         scoreboard.setText(" " + score1);
-                        rabbitImg(0);//기쁜 토끼 이미지
                     }
                     else
                     {
                         problem.setText(" 오답!");
-                        rabbitImg(3);//화난 토끼 이미지
                         cntProblem++;//다음 난이도/문제종료로 넘어가는걸 체크하기 위한 카운트변수
                     }
                 }
@@ -353,10 +320,8 @@ public class Math_MainActivity extends AppCompatActivity {
                         score1++;//점수증가
                         cntProblem++;//다음 난이도로 넘어가는걸 체크하기 위한 카운트변수
                         scoreboard.setText(" " + score1);
-                        rabbitImg(0);//기쁜 토끼 이미지
                     } else {
                         problem.setText(" 오답!");
-                        rabbitImg(2);//슬픈 토끼 이미지
                         cntProblem++;//다음 난이도/문제종료로 넘어가는걸 체크하기 위한 카운트변수
                     }
                 }
@@ -368,11 +333,9 @@ public class Math_MainActivity extends AppCompatActivity {
                         score1++;//점수증가
                         cntProblem++;//다음 난이도로 넘어가는걸 체크하기 위한 카운트변수
                         scoreboard.setText(" " + score1);
-                        rabbitImg(0);//기쁜 토끼 이미지
                     }
                     else{
                         problem.setText(" 오답!");
-                        rabbitImg(2);//슬픈 토끼 이미지
                         cntProblem++;//다음 난이도/문제종료로 넘어가는걸 체크하기 위한 카운트변수
                     }
                 }
