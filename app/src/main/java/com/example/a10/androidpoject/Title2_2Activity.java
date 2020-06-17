@@ -25,7 +25,7 @@ public class Title2_2Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(
-                        getApplicationContext(),Math_MainActivity.class);//현재 화면의 제어권자,다음 넘어갈 클래스 지정
+                        getApplicationContext(),Math_description_MainActivity.class);//현재 화면의 제어권자,다음 넘어갈 클래스 지정
                 startActivity(intent);//다음화면으로 넘어간다.
             }
         });
