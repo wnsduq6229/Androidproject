@@ -78,7 +78,7 @@ public class quiz_MainActivity extends AppCompatActivity {
     public void showNextQuiz() {
 
         // 다음문제 번호 출력
-        countLabel.setText("\n\n           "+quizCount+"번 문제");
+        countLabel.setText("\n\n                       "+quizCount+"번 문제");
 
         //0부터 4사이 숫자중 랜덤하게 숫자 형성
         Random random = new Random();
