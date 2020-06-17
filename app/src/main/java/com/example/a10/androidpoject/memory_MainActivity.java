@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
-
+/// 코드 작성자 홍예지
 public class memory_MainActivity extends AppCompatActivity {
 
     int i=0;//문제 번호 변수. (o/x)클릭 시마다 1씩 증가한다

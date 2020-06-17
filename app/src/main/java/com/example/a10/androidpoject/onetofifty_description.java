@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-
+/// 코드 작성자 김준엽,박지현
 
 public class onetofifty_description extends AppCompatActivity {
     Button gooneMain,gooneBack;

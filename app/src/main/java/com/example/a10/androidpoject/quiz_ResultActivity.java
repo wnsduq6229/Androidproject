@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
+/// 코드 작성자 박지현
 
 public class quiz_ResultActivity extends AppCompatActivity {
     Button goback2;

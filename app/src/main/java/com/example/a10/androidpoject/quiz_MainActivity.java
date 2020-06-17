@@ -15,7 +15,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
-
+/// 코드 작성자 박지현
 public class quiz_MainActivity extends AppCompatActivity {
 
     ArrayList<ArrayList<String>> quizArray = new ArrayList<>(); //문제를 넣을 배열

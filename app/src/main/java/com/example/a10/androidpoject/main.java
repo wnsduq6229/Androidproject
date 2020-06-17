@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.TextView;
-/// 코드 작성자 김준엽
+/// 코드 작성자 김준엽,박지현
 public class main extends AppCompatActivity {
     ImageButton btnOk,btnCancel;
 

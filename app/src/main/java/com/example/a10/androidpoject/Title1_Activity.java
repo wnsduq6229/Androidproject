@@ -1,5 +1,5 @@
 package com.example.a10.androidpoject;
-/// 코드 작성자 김준엽
+/// 코드 작성자 김준엽,박지현
 
 import android.content.Intent;
 import android.os.Bundle;
