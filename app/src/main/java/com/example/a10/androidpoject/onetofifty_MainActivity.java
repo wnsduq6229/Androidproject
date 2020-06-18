@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import java.util.Random;
+
 //코드 작성자 김성수
 
 

@@ -14,6 +14,7 @@ public class Title1_Activity extends AppCompatActivity {
     ImageButton startBtn,exitBtn,idBtn;
     TextView Title;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

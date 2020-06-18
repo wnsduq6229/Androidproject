@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+
 /// 코드 작성자 홍예지
 public class memory_MainActivity extends AppCompatActivity {
 
