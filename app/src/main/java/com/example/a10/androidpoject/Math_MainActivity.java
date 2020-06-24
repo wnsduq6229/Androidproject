@@ -14,6 +14,8 @@ import android.widget.TextView;
 import java.util.Random;
 
 public class Math_MainActivity extends AppCompatActivity {
+
+
     ImageButton btnPlus,btnMinus,btnMultiply,btnDivion;
     TextView problem;//문제를 나타내는 변수
     TextView scoreboard;//정답을 나타내는 변수
@@ -22,7 +24,9 @@ public class Math_MainActivity extends AppCompatActivity {
     int p1 = rnd.nextInt(15)+1;//1부터 50 까지 랜덤 변수 생성
     int p2 = rnd.nextInt(15)+1;//1부터 50 까지 랜덤 변수 생성
     int p3 = rnd.nextInt(15)+1;//1부터 50 까지 랜덤 변수 생성 문제 2단계를 위한 변수
+
     int result=0;//결과 값을 저장하기위한 변수
+
     int cntProblem=0;//문제 난이도 설정을 위한 카운트 변수
     int choose1= rnd.nextInt(4)+1;// 4가지 케이스의 결과값중 하나를 선택하기 위한 변수
     public int score1=0;

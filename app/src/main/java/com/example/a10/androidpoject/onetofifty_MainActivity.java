@@ -1,6 +1,7 @@
 package com.example.a10.androidpoject;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -14,11 +15,12 @@ import java.util.Random;
 
 public class onetofifty_MainActivity extends Activity {
 
-
-    private static final int MILLISINFUTURE = 11*1000;
+    public static Context context;
+    private static final int MILLISINFUTURE = 10*3000;
     private static final int COUNT_DOWN_INTERVAL = 1000;
 
-    private int count = 10; //남은 시간초 설정
+    private int count = 30; //남은 시간초 설정
+    TextView[] button_text = new TextView[25];
     private TextView countTxt ;
     private CountDownTimer countDownTimer;
 
@@ -26,13 +28,14 @@ public class onetofifty_MainActivity extends Activity {
     TextView score;
     View[] include = new View[2];
     TextView now_number;
+    int final_score = 0;
     RelativeLayout[] button = new RelativeLayout[25];
-    TextView[] button_text = new TextView[25];
     RelativeLayout ok_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_onetofifty_main);
+        context = this;
         all_view();
         include[0].setVisibility(View.VISIBLE); //게임 시작과 종료화면 visible set
         include[1].setVisibility(View.GONE);
@@ -52,10 +55,13 @@ public class onetofifty_MainActivity extends Activity {
             }
             public void onFinish() {
                 //countTxt.setText(String.valueOf("Finish ."));
-
                 include[1].setVisibility(View.VISIBLE);
                 include[0].setVisibility(View.GONE);
-                score.setText(Integer.toString(match_number_int)); //카운트 종료시 점수 표시하는 부분  //남은 시간초 + 도달한 숫자로 구성할 방식 // 현재 도달한 숫자만 표시
+                final_score = match_number_int + 50;
+                score.setText(Integer.toString(final_score));
+
+                //카운트 종료시 점수 표시하는 부분  /
+                // /남은 시간초 + 도달한 숫자로 구성할 방식 // 현재 도달한 숫자만 표시
                 //--game();-->
             }
         };

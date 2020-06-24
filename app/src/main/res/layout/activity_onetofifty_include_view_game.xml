@@ -3,7 +3,8 @@
 
 
 
-<RelativeLayout android:background="@drawable/background" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/frog" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"
     >
 
 
@@ -223,6 +224,8 @@
     </LinearLayout>
 
     </LinearLayout>
+
+
 
 
     <!--게임화면 layout-->

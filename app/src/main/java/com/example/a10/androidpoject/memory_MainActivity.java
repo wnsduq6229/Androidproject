@@ -1,5 +1,6 @@
 package com.example.a10.androidpoject;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +14,7 @@ public class memory_MainActivity extends AppCompatActivity {
 
     int i=0;//문제 번호 변수. (o/x)클릭 시마다 1씩 증가한다
     int score=0;//점수 저장 변수. (0~28) 한문제 정답시마다 1씩 증가한다
+    public static Context context;
     ImageView imageview=null;//패턴 이미지 변수
     //30개의 패턴 이미지를 저장하는 이미지소스 배열
     int imageResources[]={R.drawable.pattern1,R.drawable.pattern2,R.drawable.pattern3,R.drawable.pattern4,R.drawable.pattern5,R.drawable.pattern6,R.drawable.pattern7,R.drawable.pattern8,R.drawable.pattern9,R.drawable.pattern10,
@@ -25,6 +27,7 @@ public class memory_MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_memory_main);
 
+        context=this;
 
         final Button button_n=(Button)findViewById(R.id.button_n);//첫번째, 두번째에 다음 문제로 넘어가는 버튼. 이후에 사라진다
         final Button button_o=(Button)findViewById(R.id.button_o);//o버튼

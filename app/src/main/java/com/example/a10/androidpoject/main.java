@@ -37,7 +37,7 @@ public class main extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(
-                        getApplicationContext(),main.class);//현재 화면의 제어권자,다음 넘어갈 클래스 지정 main으로 되어 있는걸 2화면으로 만들면 바꿔야함
+                        getApplicationContext(),Title1_Activity.class);//현재 화면의 제어권자,다음 넘어갈 클래스 지정 main으로 되어 있는걸 2화면으로 만들면 바꿔야함
                 startActivity(intent);//다음화면으로 넘어간다.
             }
         });

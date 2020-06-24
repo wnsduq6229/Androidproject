@@ -20,7 +20,7 @@ public class memory_SubActivity extends AppCompatActivity {
         TextView txt=(TextView)findViewById(R.id.textView);
         goback = (Button)findViewById(R.id.goBack);
         Intent intent=getIntent();
-        int score=intent.getExtras().getInt("score");
+        int score=70+intent.getExtras().getInt("score");
         txt.setText(String.valueOf(score)+"점입니다");
 
         goback.setOnClickListener(new View.OnClickListener() {

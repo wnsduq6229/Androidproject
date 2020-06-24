@@ -74,4 +74,22 @@
         app:srcCompat="@drawable/su"
         tools:layout_editor_absoluteX="300dp"
         tools:layout_editor_absoluteY="200dp" />
+
+    <ImageButton
+        android:id="@+id/rank"
+        android:layout_width="154dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginTop="580dp"
+        android:background="#00ff0000"
+        android:padding="0sp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/rank"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="200dp" />
+
 </RelativeLayout>

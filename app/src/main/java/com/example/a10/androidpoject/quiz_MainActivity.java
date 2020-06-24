@@ -1,6 +1,7 @@
 package com.example.a10.androidpoject;
 
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AlertDialog;
@@ -17,6 +18,8 @@ import java.util.Collections;
 import java.util.Random;
 /// 코드 작성자 박지현
 public class quiz_MainActivity extends AppCompatActivity {
+
+    public static Context context;
 
     ArrayList<ArrayList<String>> quizArray = new ArrayList<>(); //문제를 넣을 배열
     String quizData[][] = {
@@ -41,12 +44,15 @@ public class quiz_MainActivity extends AppCompatActivity {
     private Button answerBtn4;
     private String rightAnswer;
     private int rightAnswerCount = 0;
+    int quiz_score=0;
     private int quizCount = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_main);
+
+        context = this;
 
         countLabel = findViewById(R.id.countLabel);
         questionImage = findViewById(R.id.questionImage);
@@ -155,12 +161,15 @@ public class quiz_MainActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Result");
         builder.setMessage((rightAnswerCount)*10 + " / 100");
+        quiz_score = rightAnswerCount * 10;
         builder.setPositiveButton("Try Again", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 recreate();
             }
         });
+
+
         builder.setNegativeButton("Quit", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {

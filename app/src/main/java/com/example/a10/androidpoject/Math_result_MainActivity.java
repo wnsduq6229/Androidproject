@@ -1,4 +1,5 @@
 package com.example.a10.androidpoject;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,11 +13,13 @@ import com.example.a10.androidpoject.Math_MainActivity;
 /// 코드 작성자 김준엽
 public class Math_result_MainActivity extends AppCompatActivity {
     Button goback1;
+    public static Context context;//다른 액티비티에 변수 전달하기 위한 변수.
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_math_result);
-
+        context = this;
         goback1=(Button)findViewById(R.id.goBack1);
         TextView resulttext=(TextView)findViewById(R.id.textView8);
         Intent intent=getIntent();
